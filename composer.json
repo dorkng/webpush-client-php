@@ -1,0 +1,31 @@
+{
+    "name": "dorkng/webpush-client-php",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["webpush", "push", "notification"],
+    "description": "This library provides a wrapper around the webpush service provided by dorkng.",
+    "homepage": "https://github.com/dorkng/webpush-client-php",
+    "authors": [
+        {
+            "name": "Atanda Rasheed",
+            "email": "r.atanda@dork.ng",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dork\\Webpush\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.4"
+    }
+}
