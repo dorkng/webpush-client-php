@@ -52,12 +52,12 @@ class Subscriber
     /**
      * Unregister the device from list of subscribers.
      *
-     * @param string $subscriptionId
+     * @param string $deviceId
      * @return void
      */
-    public function unsubscribe($subscriptionId = null)
+    public function unsubscribe($deviceId = null)
     {
-        $params = ['uid' => $this->uid, 'subscriptionId' => $subscriptionId,];
+        $params = ['uid' => $this->uid, 'deviceId' => $deviceId,];
         $this->call('DELETE', '/subscriptions', [RequestOptions::JSON => $params]);
     }
 

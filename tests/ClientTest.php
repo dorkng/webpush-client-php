@@ -85,7 +85,7 @@ class ClientTest extends BaseTestCase
         $params = [
             RequestOptions::JSON => [
                 'uid' => 'uid:90',
-                'subscriptionId' => 'xyzArw',
+                'deviceId' => 'xyzArw',
             ],
         ];
 
