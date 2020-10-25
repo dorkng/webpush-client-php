@@ -27,7 +27,7 @@ class Subscriber
         $this->client = $client;
     }
 
-     /**
+   /**
      * Register the device to list of subscribers.
      *
      * @param string $endpoint
@@ -36,13 +36,14 @@ class Subscriber
      * @param string|null $contentEncoding
      * @return mixed
      */
-    public function subscribe($endpoint, $publicKey = null, $authToken = null)
+    public function subscribe($endpoint, $publicKey = null, $authToken = null, $contentEncoding = null)
     {
         $params = [
             'endpoint' => $endpoint,
             'publicKey' => $publicKey,
             'authToken' => $authToken,
             'uid' => (string)$this->uid,
+            'contentEncoding' => $contentEncoding,
         ];
 
         $response = $this->call('POST', '/subscriptions', [RequestOptions::JSON => $params]);

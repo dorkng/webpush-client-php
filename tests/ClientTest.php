@@ -62,6 +62,7 @@ class ClientTest extends BaseTestCase
                 'uid' => 'uid:90',
                 'authToken' => 'token',
                 'publicKey' => 'secret',
+                'contentEncoding' => null,
                 'endpoint' => 'http://example.com',
             ],
         ];
